@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		148D14A32B1DF35900D6ACBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D14A22B1DF35900D6ACBA /* AppDelegate.swift */; };
 		148D14A52B1DF35900D6ACBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D14A42B1DF35900D6ACBA /* SceneDelegate.swift */; };
-		148D14A72B1DF35900D6ACBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D14A62B1DF35900D6ACBA /* ViewController.swift */; };
+		148D14A72B1DF35900D6ACBA /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D14A62B1DF35900D6ACBA /* TaskListViewController.swift */; };
 		148D14AA2B1DF35900D6ACBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148D14A82B1DF35900D6ACBA /* Main.storyboard */; };
 		148D14AC2B1DF35A00D6ACBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148D14AB2B1DF35A00D6ACBA /* Assets.xcassets */; };
 		148D14AF2B1DF35A00D6ACBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148D14AD2B1DF35A00D6ACBA /* LaunchScreen.storyboard */; };
 		148D14BA2B1DF35A00D6ACBA /* ToDoApp2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D14B92B1DF35A00D6ACBA /* ToDoApp2Tests.swift */; };
 		148D14C42B1DF35A00D6ACBA /* ToDoApp2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D14C32B1DF35A00D6ACBA /* ToDoApp2UITests.swift */; };
 		148D14C62B1DF35A00D6ACBA /* ToDoApp2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D14C52B1DF35A00D6ACBA /* ToDoApp2UITestsLaunchTests.swift */; };
+		14947A5F2B58071900C4BF32 /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14947A5E2B58071900C4BF32 /* TaskListViewControllerTests.swift */; };
 		14CB85922B553BC8006CE7BE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CB85912B553BC8006CE7BE /* Location.swift */; };
 		14CB85942B553FB6006CE7BE /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CB85932B553FB6006CE7BE /* LocationTests.swift */; };
 		14CB85972B5548A1006CE7BE /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CB85962B5548A1006CE7BE /* TaskManagerTests.swift */; };
@@ -45,7 +46,7 @@
 		148D149F2B1DF35900D6ACBA /* ToDoApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148D14A22B1DF35900D6ACBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		148D14A42B1DF35900D6ACBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		148D14A62B1DF35900D6ACBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		148D14A62B1DF35900D6ACBA /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		148D14A92B1DF35900D6ACBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		148D14AB2B1DF35A00D6ACBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		148D14AE2B1DF35A00D6ACBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		148D14BF2B1DF35A00D6ACBA /* ToDoApp2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoApp2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		148D14C32B1DF35A00D6ACBA /* ToDoApp2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoApp2UITests.swift; sourceTree = "<group>"; };
 		148D14C52B1DF35A00D6ACBA /* ToDoApp2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoApp2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14947A5E2B58071900C4BF32 /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
 		14CB85912B553BC8006CE7BE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		14CB85932B553FB6006CE7BE /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		14CB85962B5548A1006CE7BE /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				148D14B92B1DF35A00D6ACBA /* ToDoApp2Tests.swift */,
+				14947A5D2B5806EE00C4BF32 /* Controller */,
 				14CB85952B554882006CE7BE /* Manager */,
 				14CDA32E2B45C35E00D8BAAE /* Model */,
 			);
@@ -142,7 +145,7 @@
 		148D14D22B1DF54500D6ACBA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				148D14A62B1DF35900D6ACBA /* ViewController.swift */,
+				148D14A62B1DF35900D6ACBA /* TaskListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,6 +177,14 @@
 				148D14B02B1DF35A00D6ACBA /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14947A5D2B5806EE00C4BF32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14947A5E2B58071900C4BF32 /* TaskListViewControllerTests.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		14CB85952B554882006CE7BE /* Manager */ = {
@@ -334,7 +345,7 @@
 			files = (
 				14CB859A2B554973006CE7BE /* TaskManager.swift in Sources */,
 				14CDA3302B45C41600D8BAAE /* Task.swift in Sources */,
-				148D14A72B1DF35900D6ACBA /* ViewController.swift in Sources */,
+				148D14A72B1DF35900D6ACBA /* TaskListViewController.swift in Sources */,
 				14CB85922B553BC8006CE7BE /* Location.swift in Sources */,
 				148D14A32B1DF35900D6ACBA /* AppDelegate.swift in Sources */,
 				148D14A52B1DF35900D6ACBA /* SceneDelegate.swift in Sources */,
@@ -348,6 +359,7 @@
 				14CDA32D2B45C34500D8BAAE /* TaskTests.swift in Sources */,
 				14CB85942B553FB6006CE7BE /* LocationTests.swift in Sources */,
 				14CB85972B5548A1006CE7BE /* TaskManagerTests.swift in Sources */,
+				14947A5F2B58071900C4BF32 /* TaskListViewControllerTests.swift in Sources */,
 				148D14BA2B1DF35A00D6ACBA /* ToDoApp2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

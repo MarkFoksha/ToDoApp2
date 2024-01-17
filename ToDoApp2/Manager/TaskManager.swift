@@ -27,11 +27,18 @@ struct TaskManager {
     }
     
     mutating func add(task: Task) {
-        tasks.append(task)
+        if !tasks.contains(task) {
+            tasks.append(task)
+        }
     }
     
     mutating func checkTask(at index: Int) {
         let removedTask = tasks.remove(at: index)
         doneTasks.append(removedTask)
+    }
+    
+    mutating func removeAll() {
+        tasks.removeAll()
+        doneTasks.removeAll()
     }
 }
