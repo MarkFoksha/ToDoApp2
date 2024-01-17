@@ -17,6 +17,8 @@
 		148D14C42B1DF35A00D6ACBA /* ToDoApp2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D14C32B1DF35A00D6ACBA /* ToDoApp2UITests.swift */; };
 		148D14C62B1DF35A00D6ACBA /* ToDoApp2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D14C52B1DF35A00D6ACBA /* ToDoApp2UITestsLaunchTests.swift */; };
 		14947A5F2B58071900C4BF32 /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14947A5E2B58071900C4BF32 /* TaskListViewControllerTests.swift */; };
+		14947A612B580E9200C4BF32 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14947A602B580E9200C4BF32 /* DataProvider.swift */; };
+		14947A632B58144B00C4BF32 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14947A622B58144B00C4BF32 /* DataProviderTests.swift */; };
 		14CB85922B553BC8006CE7BE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CB85912B553BC8006CE7BE /* Location.swift */; };
 		14CB85942B553FB6006CE7BE /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CB85932B553FB6006CE7BE /* LocationTests.swift */; };
 		14CB85972B5548A1006CE7BE /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CB85962B5548A1006CE7BE /* TaskManagerTests.swift */; };
@@ -57,6 +59,8 @@
 		148D14C32B1DF35A00D6ACBA /* ToDoApp2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoApp2UITests.swift; sourceTree = "<group>"; };
 		148D14C52B1DF35A00D6ACBA /* ToDoApp2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoApp2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		14947A5E2B58071900C4BF32 /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
+		14947A602B580E9200C4BF32 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		14947A622B58144B00C4BF32 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
 		14CB85912B553BC8006CE7BE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		14CB85932B553FB6006CE7BE /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		14CB85962B5548A1006CE7BE /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				148D14A62B1DF35900D6ACBA /* TaskListViewController.swift */,
+				14947A602B580E9200C4BF32 /* DataProvider.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				14947A5E2B58071900C4BF32 /* TaskListViewControllerTests.swift */,
+				14947A622B58144B00C4BF32 /* DataProviderTests.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -346,6 +352,7 @@
 				14CB859A2B554973006CE7BE /* TaskManager.swift in Sources */,
 				14CDA3302B45C41600D8BAAE /* Task.swift in Sources */,
 				148D14A72B1DF35900D6ACBA /* TaskListViewController.swift in Sources */,
+				14947A612B580E9200C4BF32 /* DataProvider.swift in Sources */,
 				14CB85922B553BC8006CE7BE /* Location.swift in Sources */,
 				148D14A32B1DF35900D6ACBA /* AppDelegate.swift in Sources */,
 				148D14A52B1DF35900D6ACBA /* SceneDelegate.swift in Sources */,
@@ -358,6 +365,7 @@
 			files = (
 				14CDA32D2B45C34500D8BAAE /* TaskTests.swift in Sources */,
 				14CB85942B553FB6006CE7BE /* LocationTests.swift in Sources */,
+				14947A632B58144B00C4BF32 /* DataProviderTests.swift in Sources */,
 				14CB85972B5548A1006CE7BE /* TaskManagerTests.swift in Sources */,
 				14947A5F2B58071900C4BF32 /* TaskListViewControllerTests.swift in Sources */,
 				148D14BA2B1DF35A00D6ACBA /* ToDoApp2Tests.swift in Sources */,

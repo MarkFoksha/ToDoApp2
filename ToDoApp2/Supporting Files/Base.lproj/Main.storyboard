@@ -19,6 +19,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="P2H-6g-V6B">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="u0q-08-au3" id="uNx-Jk-pL2"/>
+                                    <outlet property="delegate" destination="u0q-08-au3" id="Bxr-uA-WDp"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -31,10 +35,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dataProvider" destination="u0q-08-au3" id="Cg6-2D-kWC"/>
                         <outlet property="tableView" destination="P2H-6g-V6B" id="BIk-d4-EkY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="u0q-08-au3" customClass="DataProvider" customModule="ToDoApp2" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="140" y="3.1484257871064472"/>
         </scene>
