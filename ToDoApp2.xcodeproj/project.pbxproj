@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		143D8B712B6A97AB00464E33 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143D8B702B6A97AB00464E33 /* TaskCell.swift */; };
 		148D14A32B1DF35900D6ACBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D14A22B1DF35900D6ACBA /* AppDelegate.swift */; };
 		148D14A52B1DF35900D6ACBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D14A42B1DF35900D6ACBA /* SceneDelegate.swift */; };
 		148D14A72B1DF35900D6ACBA /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D14A62B1DF35900D6ACBA /* TaskListViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		143D8B702B6A97AB00464E33 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		148D149F2B1DF35900D6ACBA /* ToDoApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148D14A22B1DF35900D6ACBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		148D14A42B1DF35900D6ACBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		148D14D42B1DF56400D6ACBA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				143D8B702B6A97AB00464E33 /* TaskCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				14CDA3302B45C41600D8BAAE /* Task.swift in Sources */,
 				148D14A72B1DF35900D6ACBA /* TaskListViewController.swift in Sources */,
 				14947A612B580E9200C4BF32 /* DataProvider.swift in Sources */,
+				143D8B712B6A97AB00464E33 /* TaskCell.swift in Sources */,
 				14CB85922B553BC8006CE7BE /* Location.swift in Sources */,
 				148D14A32B1DF35900D6ACBA /* AppDelegate.swift in Sources */,
 				148D14A52B1DF35900D6ACBA /* SceneDelegate.swift in Sources */,
