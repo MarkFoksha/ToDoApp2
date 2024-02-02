@@ -34,7 +34,7 @@ extension DataProvider: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TaskCell.self), for: indexPath) as! TaskCell
         
-        guard let section = Section(rawValue: indexPath.row) else { return UITableViewCell() }
+        guard let section = Section(rawValue: indexPath.section) else { return UITableViewCell() }
         guard let taskManager = taskManager else { return UITableViewCell() }
         
         let task: Task
