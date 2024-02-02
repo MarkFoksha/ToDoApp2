@@ -17,12 +17,19 @@ class DataProvider: NSObject {
 }
 
 extension DataProvider: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        guard let section = Section(rawValue: indexPath.section) else { return "Error" }
+        
+        switch section {
+        case .todo: return "Done"
+        case .done: return "Undone"
+        }
+    }
 }
 
 extension DataProvider: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let section = Section(rawValue: section) else { return 0  }
+        guard let section = Section(rawValue: section) else { return 0 }
         guard let taskManager = taskManager else { return 0 }
         
         switch section {
