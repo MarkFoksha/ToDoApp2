@@ -37,6 +37,11 @@ struct TaskManager {
         doneTasks.append(removedTask)
     }
     
+    mutating func uncheckTask(at index: Int) {
+        let removedTask = doneTasks.remove(at: index)
+        tasks.append(removedTask)
+    }
+    
     mutating func removeAll() {
         tasks.removeAll()
         doneTasks.removeAll()
