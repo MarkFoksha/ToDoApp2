@@ -161,7 +161,7 @@ extension DataProviderTests {
     class MockTaskCell: TaskCell {
         var task: Task?
         
-        override func configure(withTask task: Task) {
+        override func configure(withTask task: Task, isDone: Bool = false) {
             self.task = task
         }
     }
