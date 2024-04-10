@@ -173,17 +173,26 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeZ-Gr-gVp">
-                                <rect key="frame" x="150" y="372" width="75" height="35"/>
+                                <rect key="frame" x="151" y="372" width="74" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="cancel"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3e-Cc-Sjf">
-                                <rect key="frame" x="150" y="316" width="75" height="35"/>
+                                <rect key="frame" x="158" y="316" width="59" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="save"/>
+                                <connections>
+                                    <action selector="save" destination="Sle-Zz-Ghr" eventType="touchUpInside" id="cvc-Jk-Tol"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JTc-d0-O0W">
+                                <rect key="frame" x="139" y="261" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TVK-IN-cao"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -192,6 +201,7 @@
                         <outlet property="addressTextField" destination="aKt-gd-Pg7" id="cll-iH-ibc"/>
                         <outlet property="cancelButton" destination="UeZ-Gr-gVp" id="pnc-s0-WZQ"/>
                         <outlet property="dateTextField" destination="Kng-W1-HoY" id="f0g-x9-hFm"/>
+                        <outlet property="descriptionTextField" destination="JTc-d0-O0W" id="che-jf-f72"/>
                         <outlet property="locationTextField" destination="k7P-YT-0TO" id="Opf-5t-T0a"/>
                         <outlet property="saveButton" destination="Q3e-Cc-Sjf" id="Lie-0Q-1gC"/>
                         <outlet property="titleTextField" destination="IH0-vx-q2b" id="MEa-sR-WbD"/>
