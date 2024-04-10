@@ -27,6 +27,11 @@ class APIClient {
         let query = "name=\(name)&password=\(password)"
         guard let url = URL(string: "https://todoApp.com/login?\(query)") else { fatalError() }
         urlSession.dataTask(with: url) { data, response, error in
+            guard let data = data else { fatalError() }
+            let dictionary = try! JSONSerialization.jsonObject(with: data) as! [String : String]
+            let token = dictionary["token"]
+            
+            completionHandler(token, nil)
         }.resume()
     }
 }
