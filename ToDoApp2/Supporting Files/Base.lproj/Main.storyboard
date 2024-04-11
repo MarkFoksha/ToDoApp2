@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nZJ-po-UFQ">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -73,6 +73,13 @@
                             <constraint firstItem="P2H-6g-V6B" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="scL-R2-jXX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pTe-GO-ygf">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lfA-Q4-alO">
+                            <connections>
+                                <action selector="addNewTask:" destination="BYZ-38-t0r" id="BGf-VB-s17"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dataProvider" destination="u0q-08-au3" id="Cg6-2D-kWC"/>
                         <outlet property="tableView" destination="P2H-6g-V6B" id="BIk-d4-EkY"/>
@@ -81,7 +88,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="u0q-08-au3" customClass="DataProvider" customModule="ToDoApp2" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="140" y="3.1484257871064472"/>
+            <point key="canvasLocation" x="1079.2" y="3.1484257871064472"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Exs-g7-epZ">
@@ -138,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tcd-v6-i9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888" y="13"/>
+            <point key="canvasLocation" x="1826.4000000000001" y="12.143928035982009"/>
         </scene>
         <!--New Task View Controller-->
         <scene sceneID="YbB-gH-Bpe">
@@ -209,7 +216,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BLe-dU-yoj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1596" y="12"/>
+            <point key="canvasLocation" x="2535.1999999999998" y="11.244377811094454"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="472-g2-V3L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nZJ-po-UFQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zCd-HX-MPu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Goj-iJ-mmA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qem-8k-YwH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="3.1484257871064472"/>
         </scene>
     </scenes>
     <resources>

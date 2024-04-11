@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TaskManager {
+class TaskManager {
     var tasksCount: Int {
         tasks.count
     }
@@ -26,23 +26,23 @@ struct TaskManager {
         doneTasks[index]
     }
     
-    mutating func add(task: Task) {
+    func add(task: Task) {
         if !tasks.contains(task) {
             tasks.append(task)
         }
     }
     
-    mutating func checkTask(at index: Int) {
+    func checkTask(at index: Int) {
         let removedTask = tasks.remove(at: index)
         doneTasks.append(removedTask)
     }
     
-    mutating func uncheckTask(at index: Int) {
+    func uncheckTask(at index: Int) {
         let removedTask = doneTasks.remove(at: index)
         tasks.append(removedTask)
     }
     
-    mutating func removeAll() {
+    func removeAll() {
         tasks.removeAll()
         doneTasks.removeAll()
     }
