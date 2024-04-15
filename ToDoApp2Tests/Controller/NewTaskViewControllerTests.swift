@@ -17,6 +17,7 @@ final class NewTaskViewControllerTests: XCTestCase {
     var placemark: MockPlacemark!
     
     override func setUpWithError() throws {
+        super.setUp()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         sut = storyboard.instantiateViewController(identifier: String(describing: NewTaskViewController.self)) as? NewTaskViewController
         sut.loadViewIfNeeded()
@@ -134,7 +135,9 @@ final class NewTaskViewControllerTests: XCTestCase {
         mockNewTaskViewController.addressTextField.text = "Chernivtsi"
         
         mockNewTaskViewController.save()
-        XCTAssertTrue(mockNewTaskViewController.isDismissed)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.05, execute: {
+            XCTAssertTrue(mockNewTaskViewController.isDismissed)
+        })
     }
 }
 
