@@ -74,7 +74,7 @@ final class NewTaskViewControllerTests: XCTestCase {
 //        let coordinate = CLLocationCoordinate2D(latitude: 48.2929906, longitude: 25.9329692)
 //        let location = Location(name: "Bar", coordinate: coordinate)
 //        
-//        let placemark = MockPlacemark(coder: NSCoder())!
+//        let placemark = MockPlacemark(placemark: CLPlacemark.copy() as! CLPlacemark)
 //
 //        placemark.mockCoordinate = coordinate
 //        mockGeocoder.completionHandler?([placemark], nil)
@@ -135,6 +135,7 @@ final class NewTaskViewControllerTests: XCTestCase {
         mockNewTaskViewController.addressTextField.text = "Chernivtsi"
         
         mockNewTaskViewController.save()
+         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.05, execute: {
             XCTAssertTrue(mockNewTaskViewController.isDismissed)
         })

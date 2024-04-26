@@ -28,7 +28,7 @@ class NewTaskViewController: UIViewController {
               let addressString = addressTextField.text
         else
         {
-            return
+            return print("Error")
         }
         let date = dateFormatter.date(from: dateString)
         let descriptionString = descriptionTextField.text

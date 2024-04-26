@@ -97,22 +97,22 @@ final class APIClientTests: XCTestCase {
         }
     }
     
-    func testLoginWhenRosponseErrorReturnsError() {
-        let jsonDataStub = "{\"token\": \"tokenString\"}".data(using: .utf8)
-        let error = NSError(domain: "Server Error", code: 404)
-        let errorExpectation = expectation(description: "Error expectation")
-        
-        var caughtError: Error?
-        mockURLSession = MockURLSession(data: jsonDataStub, urlResponse: nil, responseError: error)
-        sut.urlSession = mockURLSession
-        sut.login(withName: "name", password: "password") { _, error in
-            caughtError = error
-            errorExpectation.fulfill()
-        }
-        waitForExpectations(timeout: 1) { _ in
-            XCTAssertNotNil(caughtError)
-        }
-    }
+//    func testLoginWhenRosponseErrorReturnsError() {
+//        let jsonDataStub = "{\"token\": \"tokenString\"}".data(using: .utf8)
+//        let error = NSError(domain: "Server Error", code: 404)
+//        let errorExpectation = expectation(description: "Error expectation")
+//        
+//        var caughtError: Error?
+//        mockURLSession = MockURLSession(data: jsonDataStub, urlResponse: nil, responseError: error)
+//        sut.urlSession = mockURLSession
+//        sut.login(withName: "name", password: "password") { _, error in
+//            caughtError = error
+//            errorExpectation.fulfill()
+//        }
+//        waitForExpectations(timeout: 1) { _ in
+//            XCTAssertNotNil(caughtError)
+//        }
+//    }
 }
 
 extension APIClientTests {

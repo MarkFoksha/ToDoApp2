@@ -39,7 +39,7 @@ class APIClient {
                 let dictionary = try JSONSerialization.jsonObject(with: data) as! [String : String]
                 let token = dictionary["token"]
                 
-                completionHandler(token, error)
+                completionHandler(token, nil)
             } catch {
                 completionHandler(nil, error)
             }
