@@ -27,6 +27,8 @@ class TaskListViewController: UIViewController {
         dataProvider.taskManager = taskManager
         
         NotificationCenter.default.addObserver(self, selector: #selector(showDetails), name: NSNotification.Name(rawValue: "notification"), object: nil)
+        
+        view.accessibilityIdentifier = "mainView"
     }
     
     override func viewWillAppear(_ animated: Bool) {

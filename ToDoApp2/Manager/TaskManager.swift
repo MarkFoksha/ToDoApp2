@@ -72,12 +72,14 @@ class TaskManager {
     }
     
     func checkTask(at index: Int) {
-        let removedTask = tasks.remove(at: index)
-        doneTasks.append(removedTask)
+        var task = tasks.remove(at: index)
+        task.isDone.toggle()
+        doneTasks.append(task)
     }
     
     func uncheckTask(at index: Int) {
-        let removedTask = doneTasks.remove(at: index)
+        var removedTask = doneTasks.remove(at: index)
+        removedTask.isDone.toggle()
         tasks.append(removedTask)
     }
     

@@ -82,6 +82,22 @@ final class TaskListViewControllerTests: XCTestCase {
         XCTAssertTrue((sut.tableView as! MockTableView).isReloaded)
     }
     
+    func testTappingCellSendsNotification() {
+        let task = Task(title: "Foo")
+        sut.dataProvider.taskManager?.add(task: task)
+        
+        expectation(forNotification: NSNotification.Name(rawValue: "notification"), object: nil) { notification in
+            guard let taskFromNotification = notification.userInfo?["task"] as? Task else {
+                return false
+            }
+            return task == taskFromNotification
+        }
+        let tableView = sut.tableView
+        tableView?.delegate?.tableView?(tableView!, didSelectRowAt: IndexPath(row: 0, section: 0))
+        
+        waitForExpectations(timeout: 1)
+    }
+    
     func testSelectedCellPushesNotificationToDetailVC() {
         let mockNavigationController = MockNavigationController(rootViewController: sut)
         UIApplication.shared.keyWindow?.rootViewController = mockNavigationController
@@ -93,7 +109,7 @@ final class TaskListViewControllerTests: XCTestCase {
         sut.dataProvider.taskManager?.add(task: task)
         sut.dataProvider.taskManager?.add(task: task1)
         
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "DidSelectRow notification"),
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "notification"),
                                         object: self,
                                         userInfo: ["task" : task1])
         guard let detailedViewController = mockNavigationController.pushedViewController as? DetailViewController else {
